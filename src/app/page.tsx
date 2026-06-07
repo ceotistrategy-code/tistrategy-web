@@ -106,34 +106,93 @@ export default function Home() {
                 artificial para startups, pymes y grandes empresas.
               </p>
 
-              <div className="mt-10 flex flex-wrap gap-4">
-                <button className="rounded-xl bg-black px-8 py-4 text-white transition hover:bg-gray-800">
+             <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="https://wa.me/593963079564?text=Hola%20TISTRATEGY,%20quiero%20una%20cotización."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl bg-black px-8 py-4 text-white transition hover:bg-gray-800"
+                >
                   Solicitar Cotización
-                </button>
-                <button className="rounded-xl border border-gray-300 px-8 py-4 hover:bg-gray-50">
+                </a>
+
+                <a
+                  href="https://wa.me/593963079564?text=Hola%20TISTRATEGY,%20quiero%20agendar%20reunión."
+                  className="rounded-xl border border-gray-300 px-8 py-4 hover:bg-gray-50"
+                >
                   Agendar Reunión
-                </button>
+                </a>
+
               </div>
             </div>
 
             {/* Imagen simulada */}
-            <div className="hidden lg:flex justify-center">
-              <div className="w-full max-w-lg rounded-3xl border bg-white p-8 shadow-2xl">
-                <div className="mb-4 h-4 w-32 rounded bg-blue-500" />
-                <div className="space-y-3">
-                  <div className="h-4 rounded bg-gray-200" />
-                  <div className="h-4 rounded bg-gray-200" />
-                  <div className="h-4 rounded bg-gray-200" />
-                  <div className="mt-8 grid grid-cols-2 gap-4">
-                    <div className="h-24 rounded-xl bg-blue-100" />
-                    <div className="h-24 rounded-xl bg-gray-100" />
-                  </div>
-                </div>
-              </div>
-            </div>
+           <div className="hidden lg:flex justify-center">
+            <Image
+              src="/logoTistrategy.jpeg"
+              alt="TISTRATEGY"
+              width={900}
+              height={250}
+              priority
+              className="w-full max-w-2xl object-contain"
+            />
+          </div>
 
           </div>
         </div>
+      </section>
+
+      {/* TIPOS DE PROYECTOS */}
+      <section className="bg-white py-24">
+
+        <div className="mx-auto max-w-7xl px-6">
+
+          <div className="text-center">
+
+            <h2 className="text-4xl font-bold text-black">
+              ¿Qué tipo de proyectos desarrollamos?
+            </h2>
+
+            <p className="mt-4 text-lg text-gray-600">
+              Creamos soluciones digitales adaptadas a cada tipo de organización.
+            </p>
+
+          </div>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+            <div className="rounded-2xl border p-8 shadow-sm hover:shadow-lg transition">
+              <h3 className="text-xl font-bold">🚀 Startups</h3>
+              <p className="mt-4 text-gray-600">
+                MVPs, plataformas SaaS, marketplaces y productos innovadores.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border p-8 shadow-sm hover:shadow-lg transition">
+              <h3 className="text-xl font-bold">🏢 PYMES</h3>
+              <p className="mt-4 text-gray-600">
+                Ventas, inventarios, CRM y automatización de procesos.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border p-8 shadow-sm hover:shadow-lg transition">
+              <h3 className="text-xl font-bold">🏭 Empresas</h3>
+              <p className="mt-4 text-gray-600">
+                Sistemas corporativos, dashboards y plataformas empresariales.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border p-8 shadow-sm hover:shadow-lg transition">
+              <h3 className="text-xl font-bold">🛍 Centros Comerciales</h3>
+              <p className="mt-4 text-gray-600">
+                Campañas promocionales, fidelización y experiencias digitales.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
 
       <section id="services" className="bg-gray-50 py-24">
@@ -216,42 +275,135 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="bg-white py-24">
+
         <div className="mx-auto max-w-7xl px-6">
 
           <div className="text-center">
-            <h2 className="text-4xl font-bold">
-              Tecnologías Modernas
+
+            <span className="text-blue-600 font-semibold uppercase tracking-wider">
+              Nuestro Proceso
+            </span>
+
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-black">
+              De la idea a la solución
             </h2>
 
-            <p className="mt-4 text-gray-600">
-              Utilizamos herramientas modernas para desarrollar productos rápidos, seguros y escalables.
+            <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600">
+              Acompañamos a nuestros clientes durante todo el ciclo de desarrollo,
+              desde la definición de la idea hasta la implementación y evolución del producto.
             </p>
+
           </div>
 
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
+          <div className="mt-20 grid gap-8 md:grid-cols-5">
 
-            {[
-              "Flutter",
-              "Firebase",
-              "Next.js",
-              "Cloudflare",
-              "MySQL",
-              "PHP",
-              "IA Generativa",
-              "OpenAI",
-            ].map((tech) => (
-              <div
-                key={tech}
-                className="rounded-full border px-6 py-3 font-medium"
-              >
-                {tech}
+            <div className="text-center">
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100 text-3xl">
+                🔍
               </div>
-            ))}
+
+              <h3 className="mt-6 text-xl font-semibold">
+                Análisis
+              </h3>
+
+              <p className="mt-3 text-gray-600">
+                Entendemos tus objetivos y necesidades.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100 text-3xl">
+                🎨
+              </div>
+
+              <h3 className="mt-6 text-xl font-semibold">
+                Diseño
+              </h3>
+
+              <p className="mt-3 text-gray-600">
+                Definimos la experiencia y arquitectura.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100 text-3xl">
+                💻
+              </div>
+
+              <h3 className="mt-6 text-xl font-semibold">
+                Desarrollo
+              </h3>
+
+              <p className="mt-3 text-gray-600">
+                Construimos soluciones modernas y escalables.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100 text-3xl">
+                🚀
+              </div>
+
+              <h3 className="mt-6 text-xl font-semibold">
+                Implementación
+              </h3>
+
+              <p className="mt-3 text-gray-600">
+                Desplegamos y capacitamos a los usuarios.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100 text-3xl">
+                🤝
+              </div>
+
+              <h3 className="mt-6 text-xl font-semibold">
+                Evolución
+              </h3>
+
+              <p className="mt-3 text-gray-600">
+                Soporte, mejoras y crecimiento continuo.
+              </p>
+            </div>
 
           </div>
 
         </div>
+
+      </section>
+
+      <section className="bg-blue-600 py-20 text-white">
+
+        <div className="mx-auto max-w-7xl px-6">
+
+          <div className="grid gap-10 text-center md:grid-cols-4">
+
+            <div>
+              <div className="text-5xl font-bold">10+</div>
+              <p className="mt-2">Años de experiencia</p>
+            </div>
+
+            <div>
+              <div className="text-5xl font-bold">50+</div>
+              <p className="mt-2">Proyectos desarrollados</p>
+            </div>
+
+            <div>
+              <div className="text-5xl font-bold">100%</div>
+              <p className="mt-2">Soluciones personalizadas</p>
+            </div>
+
+            <div>
+              <div className="text-5xl font-bold">24/7</div>
+              <p className="mt-2">Compromiso con nuestros clientes</p>
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
 
       <section className="bg-black text-white py-24">
@@ -273,7 +425,14 @@ export default function Home() {
             </p>
 
             <button className="mt-8 rounded-xl bg-white px-8 py-4 text-black font-semibold">
-              Conocer MONOBU
+              <a
+                href="https://monobu.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-block rounded-xl bg-white px-8 py-4 text-black font-semibold"
+              >
+                Conocer MONOBU
+              </a>
             </button>
 
           </div>
@@ -281,45 +440,93 @@ export default function Home() {
         </div>
       </section>      
 
-      <section id="about" className="py-24">
+      <section id="about" className="bg-gray-50 py-24">
+
         <div className="mx-auto max-w-7xl px-6">
 
-          <h2 className="text-center text-4xl font-bold">
-            ¿Por qué elegirnos?
-          </h2>
+          <div className="text-center">
 
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
+            <span className="text-blue-600 font-semibold uppercase tracking-wider">
+              ¿Por qué TISTRATEGY?
+            </span>
 
-            <div>
-              <h3 className="text-xl font-semibold">
-                Experiencia Tecnológica
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-black">
+              Tecnología orientada a resultados
+            </h2>
+
+            <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600">
+              Diseñamos soluciones digitales que ayudan a las empresas a crecer,
+              optimizar procesos y generar nuevas oportunidades de negocio.
+            </p>
+
+          </div>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+            <div className="rounded-2xl bg-white p-8 shadow-sm hover:shadow-xl transition">
+              <div className="text-4xl">🎯</div>
+              <h3 className="mt-4 text-xl font-semibold">
+                Enfoque Empresarial
               </h3>
               <p className="mt-3 text-gray-600">
-                Desarrollo de plataformas web, móviles y soluciones empresariales.
+                Entendemos los objetivos de negocio antes de escribir una sola línea de código.
               </p>
             </div>
 
-            <div>
-              <h3 className="text-xl font-semibold">
-                Innovación Continua
+            <div className="rounded-2xl bg-white p-8 shadow-sm hover:shadow-xl transition">
+              <div className="text-4xl">📈</div>
+              <h3 className="mt-4 text-xl font-semibold">
+                Escalabilidad
               </h3>
               <p className="mt-3 text-gray-600">
-                Aplicamos inteligencia artificial y automatización para generar valor real.
+                Soluciones preparadas para crecer junto con tu empresa.
               </p>
             </div>
 
-            <div>
-              <h3 className="text-xl font-semibold">
-                Enfoque en Resultados
+            <div className="rounded-2xl bg-white p-8 shadow-sm hover:shadow-xl transition">
+              <div className="text-4xl">🤖</div>
+              <h3 className="mt-4 text-xl font-semibold">
+                Inteligencia Artificial
               </h3>
               <p className="mt-3 text-gray-600">
-                Construimos soluciones orientadas al crecimiento y rentabilidad del negocio.
+                Incorporamos automatización e IA para aumentar la productividad.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-8 shadow-sm hover:shadow-xl transition">
+              <div className="text-4xl">🔒</div>
+              <h3 className="mt-4 text-xl font-semibold">
+                Seguridad
+              </h3>
+              <p className="mt-3 text-gray-600">
+                Aplicamos buenas prácticas para proteger la información de tu negocio.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-8 shadow-sm hover:shadow-xl transition">
+              <div className="text-4xl">⚡</div>
+              <h3 className="mt-4 text-xl font-semibold">
+                Desarrollo Ágil
+              </h3>
+              <p className="mt-3 text-gray-600">
+                Entregamos valor rápidamente mediante procesos iterativos.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-8 shadow-sm hover:shadow-xl transition">
+              <div className="text-4xl">🤝</div>
+              <h3 className="mt-4 text-xl font-semibold">
+                Acompañamiento
+              </h3>
+              <p className="mt-3 text-gray-600">
+                Te acompañamos desde la idea inicial hasta la puesta en producción.
               </p>
             </div>
 
           </div>
 
         </div>
+
       </section>
 
       <section id="contact" className="bg-gray-50 py-24">
@@ -335,13 +542,133 @@ export default function Home() {
 
           <div className="mt-10">
             <button className="rounded-xl bg-black px-8 py-4 text-white">
-              Solicitar Cotización
+              <a
+                href="https://wa.me/593963079564?text=Hola%20TISTRATEGY,%20quiero%20una%20cotización."
+                className="rounded-xl bg-black px-8 py-4 text-white transition hover:bg-gray-800"
+                >
+                Solicitar Cotización
+              </a>
             </button>
           </div>
 
         </div>
       </section>
 
+      <footer className="bg-black text-white">
+
+        <div className="mx-auto max-w-7xl px-6 py-16">
+
+          <div className="grid gap-12 md:grid-cols-4">
+
+            {/* Empresa */}
+
+            <div>
+
+              <h3 className="text-2xl font-bold">
+                TISTRATEGY S.A.
+              </h3>
+
+              <p className="mt-4 text-gray-400">
+                Desarrollo de aplicaciones móviles,
+                plataformas web, software empresarial,
+                SaaS e inteligencia artificial.
+              </p>
+
+            </div>
+
+            {/* Servicios */}
+
+            <div>
+
+              <h4 className="font-semibold text-lg">
+                Servicios
+              </h4>
+
+              <ul className="mt-4 space-y-2 text-gray-400">
+
+                <li>Apps Móviles</li>
+                <li>Plataformas Web</li>
+                <li>Software Empresarial</li>
+                <li>Soluciones SaaS</li>
+                <li>Inteligencia Artificial</li>
+
+              </ul>
+
+            </div>
+
+            {/* Productos */}
+
+            <div>
+
+              <h4 className="font-semibold text-lg">
+                Productos
+              </h4>
+
+              <ul className="mt-4 space-y-2 text-gray-400">
+
+                <li>
+                  <a
+                    href="https://monobu.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white"
+                  >
+                    MONOBU.app
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+            {/* Contacto */}
+
+            <div>
+
+              <h4 className="font-semibold text-lg">
+                Contacto
+              </h4>
+
+              <div className="mt-4 space-y-2 text-gray-400">
+
+                <p>Guayaquil - Ecuador</p>
+
+                <p>
+                  <a
+                    href="https://wa.me/593963079564"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white"
+                  >
+                    WhatsApp
+                  </a>
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+
+            © 2026 TISTRATEGY S.A. Todos los derechos reservados.
+
+          </div>
+
+        </div>
+
+      </footer>
+
+      <a
+        href="https://wa.me/593963079564"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-green-500 text-white shadow-xl hover:scale-110 transition"
+      >
+        💬
+      </a>
+      
     </main>
   );
 }
