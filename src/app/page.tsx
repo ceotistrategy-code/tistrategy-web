@@ -1,6 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <main className="min-h-screen bg-white">
 
@@ -21,20 +26,62 @@ export default function Home() {
             />
           </div>
 
-          {/* Navegación en Blanco */}
+          {/* Menú Desktop */}
           <nav className="hidden md:flex items-center gap-8 text-gray-300 font-medium text-base tracking-wide">
             <a href="#services" className="hover:text-white transition-colors duration-200">
               Servicios
             </a>
+
             <a href="#about" className="hover:text-white transition-colors duration-200">
               Nosotros
             </a>
+
             <a href="#contact" className="hover:text-white transition-colors duration-200">
               Contacto
             </a>
           </nav>
 
+          {/* Botón Mobile */}
+          <button
+            className="md:hidden text-white text-3xl font-bold"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
         </div>
+      
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-1 md:py-2"></div>
+        {menuOpen && (
+          <div className="md:hidden border-t border-gray-800 bg-black">
+            <div className="flex flex-col gap-4 px-6 py-5">
+
+              <a
+                href="#services"
+                className="text-white"
+                onClick={() => setMenuOpen(false)}
+              >
+                Servicios
+              </a>
+
+              <a
+                href="#about"
+                className="text-white"
+                onClick={() => setMenuOpen(false)}
+              >
+                Nosotros
+              </a>
+
+              <a
+                href="#contact"
+                className="text-white"
+                onClick={() => setMenuOpen(false)}
+              >
+                Contacto
+              </a>
+            </div>
+          </div>
+      )}
+
       </header>
 
       {/* HERO SECTION */}
