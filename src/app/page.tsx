@@ -406,39 +406,158 @@ export default function Home() {
 
       </section>
 
-      <section className="bg-black text-white py-24">
-        <div className="mx-auto max-w-7xl px-6">
 
-          <div className="max-w-3xl">
 
-            <span className="text-blue-400 font-medium">
-              Producto SaaS Propio
-            </span>
 
-            <h2 className="mt-4 text-5xl font-bold">
-              MONOBU.app
-            </h2>
 
-            <p className="mt-6 text-xl text-gray-300">
-              Plataforma SaaS diseñada para ayudar a negocios a gestionar clientes,
-              ventas, productos y operaciones desde cualquier lugar.
-            </p>
+      <section className="relative overflow-hidden bg-gradient-to-br from-black via-gray-950 to-purple-950 py-28 text-white">
 
-            <button className="mt-8 rounded-xl bg-white px-8 py-4 text-black font-semibold">
-              <a
-                href="https://monobu.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-8 inline-block rounded-xl bg-white px-8 py-4 text-black font-semibold"
-              >
-                Conocer MONOBU
-              </a>
-            </button>
+        {/* Glow decorativo */}
+        <div className="absolute -right-32 top-0 h-96 w-96 rounded-full bg-purple-600/20 blur-3xl" />
+        <div className="absolute -left-32 bottom-0 h-96 w-96 rounded-full bg-blue-600/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-7xl px-6">
+
+          <div className="grid items-center gap-16 lg:grid-cols-2">
+
+            {/* CONTENIDO */}
+
+            <div>
+
+              <span className="rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-2 text-sm text-purple-300">
+                Producto SaaS desarrollado por TISTRATEGY
+              </span>
+
+              <h2 className="mt-8 text-5xl md:text-6xl font-bold">
+                MONOBU
+              </h2>
+
+              <p className="mt-6 text-xl text-gray-300 leading-relaxed">
+                Una plataforma SaaS diseñada para ayudar a negocios,
+                emprendedores y empresas a gestionar clientes,
+                productos, inventario, ventas y operaciones desde cualquier lugar.
+              </p>
+
+              {/* BENEFICIOS */}
+
+              <div className="mt-10 grid gap-4 md:grid-cols-2">
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  👥 Gestión de Clientes
+                </div>
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  📦 Inventario Inteligente
+                </div>
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  💰 Ventas y Facturación
+                </div>
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  📊 Reportes en Tiempo Real
+                </div>
+
+              </div>
+
+              {/* MÉTRICAS */}
+
+              <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
+
+                <div>
+                  <div className="text-3xl font-bold text-purple-400">
+                    100%
+                  </div>
+                  <p className="text-sm text-gray-400">
+                    Cloud
+                  </p>
+                </div>
+
+                <div>
+                  <div className="text-3xl font-bold text-purple-400">
+                    24/7
+                  </div>
+                  <p className="text-sm text-gray-400">
+                    Disponible
+                  </p>
+                </div>
+
+                <div>
+                  <div className="text-3xl font-bold text-purple-400">
+                    SaaS
+                  </div>
+                  <p className="text-sm text-gray-400">
+                    Escalable
+                  </p>
+                </div>
+
+                <div>
+                  <div className="text-3xl font-bold text-purple-400">
+                    IA
+                  </div>
+                  <p className="text-sm text-gray-400">
+                    Preparado
+                  </p>
+                </div>
+
+              </div>
+
+              {/* BOTONES */}
+
+              <div className="mt-12 flex flex-wrap gap-4">
+
+                <a
+                  href="https://monobu.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl bg-purple-600 px-8 py-4 font-semibold hover:bg-purple-700 transition"
+                >
+                  Visitar MONOBU
+                </a>
+
+                <a
+                  href="https://wa.me/593963079564?text=Hola,%20quiero%20una%20demo%20de%20MONOBU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl border border-white/20 px-8 py-4 hover:bg-white/10 transition"
+                >
+                  Solicitar Demo
+                </a>
+
+              </div>
+
+            </div>
+
+            {/* IMAGEN */}
+
+            <div className="flex justify-center">
+
+              <div className="relative">
+
+                <div className="absolute inset-0 rounded-full bg-purple-600/30 blur-3xl" />
+
+                <Image
+                  src="/monobu.png"
+                  alt="MONOBU"
+                  width={500}
+                  height={500}
+                  className="relative w-full max-w-md"
+                />
+
+              </div>
+
+            </div>
 
           </div>
 
         </div>
-      </section>      
+
+      </section>
+
+
+
+
+
 
       <section id="about" className="bg-gray-50 py-24">
 
