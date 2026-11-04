@@ -559,6 +559,162 @@ export default function Home() {
 
 
 
+      {/* SINCROIQ */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-black via-[#041F59] to-[#03123A] py-28 text-white">
+
+        {/* Glow decorativo */}
+        <div className="absolute -left-32 top-0 h-96 w-96 rounded-full bg-[#01D4B2]/20 blur-3xl" />
+        <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-blue-600/20 blur-3xl" />
+
+        <div className="relative mx-auto max-w-7xl px-6">
+
+          <div className="grid items-center gap-16 lg:grid-cols-2">
+
+            {/* IMAGEN */}
+
+            <div className="flex justify-center lg:order-first order-last">
+
+              <div className="relative">
+
+                <div className="absolute inset-0 rounded-full bg-[#01D4B2]/25 blur-3xl" />
+
+                <Image
+                  src="/sincroiq.png"
+                  alt="SincroIQ"
+                  width={500}
+                  height={500}
+                  className="relative w-full max-w-sm"
+                />
+
+              </div>
+
+            </div>
+
+            {/* CONTENIDO */}
+
+            <div>
+
+              <span className="rounded-full border border-[#01D4B2]/30 bg-[#01D4B2]/10 px-4 py-2 text-sm text-[#7FF0DD]">
+                Producto SaaS desarrollado por TISTRATEGY
+              </span>
+
+              <h2 className="mt-8 text-5xl md:text-6xl font-bold">
+                SincroIQ
+              </h2>
+
+              <p className="mt-6 text-xl text-gray-300 leading-relaxed">
+                Una plataforma para campañas, sorteos y programas de fidelización
+                por WhatsApp. El cliente envía la foto de su factura, la
+                inteligencia artificial la lee, se valida con el SRI y recibe
+                sus boletos en el mismo chat, en segundos. Y con su tarjeta de
+                fidelización digital accede a beneficios en los comercios
+                afiliados, sin tarjetas físicas ni apps que descargar.
+              </p>
+
+              {/* BENEFICIOS */}
+
+              <div className="mt-10 grid gap-4 md:grid-cols-2">
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  💬 Participación por WhatsApp
+                </div>
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  🧾 Lectura de facturas con IA
+                </div>
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  ✅ Validación con el SRI
+                </div>
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  🎫 Tarjeta de fidelización digital
+                </div>
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  🏪 Beneficios en comercios afiliados
+                </div>
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  📊 Panel de campañas en tiempo real
+                </div>
+
+              </div>
+
+              {/* MÉTRICAS */}
+
+              <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
+
+                <div>
+                  <div className="text-3xl font-bold text-[#01D4B2]">
+                    WhatsApp
+                  </div>
+                  <p className="text-sm text-gray-400">
+                    Sin apps
+                  </p>
+                </div>
+
+                <div>
+                  <div className="text-3xl font-bold text-[#01D4B2]">
+                    IA
+                  </div>
+                  <p className="text-sm text-gray-400">
+                    Lectura automática
+                  </p>
+                </div>
+
+                <div>
+                  <div className="text-3xl font-bold text-[#01D4B2]">
+                    SRI
+                  </div>
+                  <p className="text-sm text-gray-400">
+                    Facturas validadas
+                  </p>
+                </div>
+
+                <div>
+                  <div className="text-3xl font-bold text-[#01D4B2]">
+                    Segundos
+                  </div>
+                  <p className="text-sm text-gray-400">
+                    Respuesta al cliente
+                  </p>
+                </div>
+
+              </div>
+
+              {/* BOTONES */}
+
+              <div className="mt-12 flex flex-wrap gap-4">
+
+                <a
+                  href="https://sincroiq.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl bg-[#01D4B2] px-8 py-4 font-semibold text-[#041F59] hover:bg-[#3EE3C6] transition"
+                >
+                  Visitar SincroIQ
+                </a>
+
+                <a
+                  href="https://wa.me/593963079564?text=Hola,%20quiero%20una%20demo%20de%20SincroIQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl border border-white/20 px-8 py-4 hover:bg-white/10 transition"
+                >
+                  Solicitar Demo
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
       <section id="about" className="bg-gray-50 py-24">
 
         <div className="mx-auto max-w-7xl px-6">
@@ -733,6 +889,17 @@ export default function Home() {
                     className="hover:text-white"
                   >
                     MONOBU.app
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://sincroiq.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white"
+                  >
+                    SincroIQ.com
                   </a>
                 </li>
 
